@@ -1,0 +1,44 @@
+[
+  {
+    "id": 0,
+    "subject": "An toàn và bảo mật thông tin-1-23 (K19AB.KTPM.D1.K1.N01)",
+    "room": "(1,2,5,6,7,8,9)[T2] C5.502 C5[T6] C5.503 C5(3) C5.502 C5(4)[T6] C5.503 C5[CN] C5.405 C5",
+    "table_time": "Từ 14/08/2023 đến 20/08/2023: (1)   Thứ 2 tiết 6,7,8 (LT)   Thứ 6 tiết 6,7 (LT)Từ 21/08/2023 đến 27/08/2023: (2)   Thứ 2 tiết 6,7,8 (LT)   Thứ 6 tiết 6,7 (LT)Từ 28/08/2023 đến 03/09/2023: (3)   Thứ 2 tiết 9,10 (LT)   Thứ 2 tiết 6,7,8 (LT)Từ 04/09/2023 đến 10/09/2023: (4)   Thứ 6 tiết 6,7 (LT)   Chủ nhật tiết 6,7,8 (LT)Từ 11/09/2023 đến 17/09/2023: (5)   Thứ 2 tiết 6,7,8 (LT)   Thứ 6 tiết 6,7 (LT)Từ 18/09/2023 đến 24/09/2023: (6)   Thứ 2 tiết 6,7,8 (LT)   Thứ 6 tiết 6,7 (LT)Từ 25/09/2023 đến 01/10/2023: (7)   Thứ 2 tiết 6,7,8 (LT)   Thứ 6 tiết 6,7 (LT)Từ 02/10/2023 đến 08/10/2023: (8)   Thứ 2 tiết 6,7,8 (LT)   Thứ 6 tiết 6,7 (LT)Từ 09/10/2023 đến 15/10/2023: (9)   Thứ 2 tiết 6,7,8 (LT)   Thứ 6 tiết 6,7 (LT)",
+    "lecturers": "Nguyễn Lan Oanh ( Mã Meet: npn-qrxr-hrd link: meet.google.com/npn-qrxr-hrd  )"
+  },
+  {
+    "id": 1,
+    "subject": "Công nghệ DOT Net-1-23 (K19AB.KTPM.D1.K1.N01)",
+    "room": "[T4] C5.503 C5[T5] C5.504 C5",
+    "table_time": "Từ 14/08/2023 đến 20/08/2023: (1)   Thứ 4 tiết 9,10 (LT)   Thứ 5 tiết 8,9,10 (LT)Từ 21/08/2023 đến 27/08/2023: (2)   Thứ 4 tiết 9,10 (LT)   Thứ 5 tiết 8,9,10 (LT)Từ 28/08/2023 đến 03/09/2023: (3)   Thứ 4 tiết 9,10 (LT)   Thứ 5 tiết 8,9,10 (LT)Từ 04/09/2023 đến 10/09/2023: (4)   Thứ 4 tiết 9,10 (LT)   Thứ 5 tiết 8,9,10 (LT)Từ 11/09/2023 đến 17/09/2023: (5)   Thứ 4 tiết 9,10 (LT)   Thứ 5 tiết 8,9,10 (LT)Từ 18/09/2023 đến 24/09/2023: (6)   Thứ 4 tiết 9,10 (LT)   Thứ 5 tiết 8,9,10 (LT)Từ 25/09/2023 đến 01/10/2023: (7)   Thứ 4 tiết 9,10 (LT)   Thứ 5 tiết 8,9,10 (LT)Từ 02/10/2023 đến 08/10/2023: (8)   Thứ 4 tiết 9,10 (LT)   Thứ 5 tiết 8,9,10 (LT)Từ 09/10/2023 đến 15/10/2023: (9)   Thứ 4 tiết 9,10 (LT)   Thứ 5 tiết 8,9,10 (LT)",
+    "lecturers": "Nguyễn Thế Vịnh"
+  },
+  {
+    "id": 2,
+    "subject": "Kiểm thử phần mềm-1-23 (K19AB_KTPM.D1.K1.N01)",
+    "room": "(1,2,3,4,5,6) C5.502 C5(7,8)[T2] C5.502 C5[T6] C5.402 C5",
+    "table_time": "Từ 14/08/2023 đến 20/08/2023: (1)   Thứ 2 tiết 3,4,5 (LT)   Thứ 6 tiết 4,5 (LT)Từ 21/08/2023 đến 27/08/2023: (2)   Thứ 2 tiết 3,4,5 (LT)   Thứ 6 tiết 4,5 (LT)Từ 28/08/2023 đến 03/09/2023: (3)   Thứ 2 tiết 3,4,5 (LT)Từ 04/09/2023 đến 10/09/2023: (4)   Thứ 6 tiết 4,5 (LT)Từ 11/09/2023 đến 17/09/2023: (5)   Thứ 2 tiết 3,4,5 (LT)   Thứ 6 tiết 4,5 (LT)Từ 18/09/2023 đến 24/09/2023: (6)   Thứ 2 tiết 3,4,5 (LT)   Thứ 6 tiết 4,5 (LT)Từ 25/09/2023 đến 01/10/2023: (7)   Thứ 2 tiết 3,4,5 (LT)   Thứ 6 tiết 4,5 (LT)Từ 02/10/2023 đến 08/10/2023: (8)   Thứ 2 tiết 3,4,5 (LT)   Thứ 6 tiết 4,5 (LT)",
+    "lecturers": "Nguyễn Lan Oanh ( Mã Meet: npn-qrxr-hrd link: meet.google.com/npn-qrxr-hrd  )"
+  },
+  {
+    "id": 3,
+    "subject": "Kiến trúc và thiết kế phần mềm-1-23 (K19AB_KTPM.D1.K1.N01)",
+    "room": "[T5] C5.504 C5[T6] C5.503 C5",
+    "table_time": "Từ 14/08/2023 đến 20/08/2023: (1)   Thứ 5 tiết 6,7 (LT)   Thứ 6 tiết 8,9,10 (LT)Từ 04/09/2023 đến 10/09/2023: (2)   Thứ 5 tiết 6,7 (LT)   Thứ 6 tiết 8,9,10 (LT)Từ 11/09/2023 đến 17/09/2023: (3)   Thứ 5 tiết 6,7 (LT)   Thứ 6 tiết 8,9,10 (LT)Từ 18/09/2023 đến 24/09/2023: (4)   Thứ 5 tiết 6,7 (LT)   Thứ 6 tiết 8,9,10 (LT)Từ 25/09/2023 đến 01/10/2023: (5)   Thứ 5 tiết 6,7 (LT)   Thứ 6 tiết 8,9,10 (LT)Từ 02/10/2023 đến 08/10/2023: (6)   Thứ 5 tiết 6,7 (LT)   Thứ 6 tiết 8,9,10 (LT)",
+    "lecturers": "Nguyễn Thu Phương ( Mã Meet: fvh-gdpk-jdc link: https://meet.google.com/fvh-gdpk-jdc  )"
+  },
+  {
+    "id": 4,
+    "subject": "Lập trình java nâng cao-1-23 (K19AB.KTPM.D1.K1.N01)",
+    "room": "(1,2,4,5,6,7,8,9) C5.502 C5(3)[T2] C5.502 C5[T3] C2.104 C2",
+    "table_time": "Từ 14/08/2023 đến 20/08/2023: (1)   Thứ 2 tiết 1,2 (LT)   Thứ 6 tiết 1,2,3 (LT)Từ 21/08/2023 đến 27/08/2023: (2)   Thứ 2 tiết 1,2 (LT)   Thứ 6 tiết 1,2,3 (LT)Từ 28/08/2023 đến 03/09/2023: (3)   Thứ 2 tiết 1,2 (LT)   Thứ 3 tiết 1,2 (LT)Từ 04/09/2023 đến 10/09/2023: (4)   Thứ 6 tiết 1,2,3 (LT)Từ 11/09/2023 đến 17/09/2023: (5)   Thứ 2 tiết 1,2 (LT)   Thứ 6 tiết 1,2,3 (LT)Từ 18/09/2023 đến 24/09/2023: (6)   Thứ 2 tiết 1,2 (LT)   Thứ 6 tiết 1,2,3 (LT)Từ 25/09/2023 đến 01/10/2023: (7)   Thứ 2 tiết 1,2 (LT)   Thứ 6 tiết 1,2,3 (LT)Từ 02/10/2023 đến 08/10/2023: (8)   Thứ 2 tiết 1,2 (LT)   Thứ 6 tiết 1,2,3 (LT)Từ 09/10/2023 đến 15/10/2023: (9)   Thứ 2 tiết 1,2 (LT)   Thứ 6 tiết 1,2,3 (LT)",
+    "lecturers": "Tô Hữu Nguyên ( Mã Meet: so-wibf-ymo link: meet.google.com/xso-wibf-ymo  )"
+  },
+  {
+    "id": 5,
+    "subject": "Quản lý dự án Công nghệ thông tin-1-23 (K19AB.KTPM.D1.K1.N01)",
+    "room": "(1,2,3,4,5,6) C2.203 C2(7,8) C6.301 C6 Lý Thuyết",
+    "table_time": "Từ 14/08/2023 đến 20/08/2023: (1)   Thứ 4 tiết 6,7,8 (LT)Từ 21/08/2023 đến 27/08/2023: (2)   Thứ 4 tiết 6,7,8 (LT)Từ 28/08/2023 đến 03/09/2023: (3)   Thứ 4 tiết 6,7,8 (LT)Từ 04/09/2023 đến 10/09/2023: (4)   Thứ 4 tiết 6,7,8 (LT)Từ 11/09/2023 đến 17/09/2023: (5)   Thứ 4 tiết 6,7,8 (LT)Từ 18/09/2023 đến 24/09/2023: (6)   Thứ 4 tiết 6,7,8 (LT)Từ 25/09/2023 đến 01/10/2023: (7)   Thứ 4 tiết 6,7,8 (LT)Từ 02/10/2023 đến 08/10/2023: (8)   Thứ 4 tiết 6,7,8 (LT)",
+    "lecturers": "Quách Xuân Trưởng ( Mã Meet: qhj-syqa-mcd link: meet.google.com/qhj-syqa-mcd  )"
+  }
+]

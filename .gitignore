@@ -1,0 +1,4 @@
+/node_modules
+.env
+/bac-tool.pem
+/package-lock.json
