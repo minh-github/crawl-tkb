@@ -1,7 +1,10 @@
 import fs from "fs";
-import puppeteer from "puppeteer";
 import path from "path";
+import puppeteer from "puppeteer";
 import moment from "moment";
+import request from "request";
+require("dotenv").config();
+const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN;
 
 const storagePath = path.join(__dirname, "../storage");
 
@@ -11,7 +14,7 @@ const getData = async (
   ID_SENDER = ""
 ) => {
   // Khởi tạo trình duyệt
-  const browser = await puppeteer.launch({ headless: false });
+  const browser = await puppeteer.launch({ headless: true });
 
   // Mở trang web
   const page = await browser.newPage();
@@ -61,14 +64,23 @@ const getData = async (
       });
     }
   );
+  console.log(elementContents);
+  if (elementContents.length > 0) {
+    fs.writeFileSync(
+      storagePath + `/${ID_SENDER}rawData.json`,
+      JSON.stringify(elementContents, null, 2)
+    );
+    console.log("Nội dung đã lưu thành JSON");
+    await handelData(ID_SENDER);
+  } else {
+    console.log("không có file trên dktc");
+    let response = {
+      text: "Nhưng trên dktc không có dữ liệu",
+    };
 
-  fs.writeFileSync(
-    storagePath + `/${ID_SENDER}rawData.json`,
-    JSON.stringify(elementContents, null, 2)
-  );
-  console.log("Nội dung đã lưu thành JSON");
+    callSendAPI(ID_SENDER, response);
+  }
   await browser.close();
-  await handelData(ID_SENDER);
 };
 
 async function handelData(ID_SENDER) {
@@ -188,6 +200,31 @@ async function readJson(data, ID_SENDER = "") {
   fs.writeFileSync(
     storagePath + `/${ID_SENDER}dataFormmat.json`,
     JSON.stringify(_data, null, 2)
+  );
+}
+
+async function callSendAPI(sender_psid, response) {
+  let request_body = {
+    recipient: {
+      id: sender_psid,
+    },
+    message: response,
+  };
+  // Send the HTTP request to the Messenger Platform
+  request(
+    {
+      uri: "https://graph.facebook.com/v2.6/me/messages",
+      qs: { access_token: PAGE_ACCESS_TOKEN },
+      method: "POST",
+      json: request_body,
+    },
+    (err, res, body) => {
+      if (!err) {
+        console.log("message sent!" + response);
+      } else {
+        console.error("Unable to send message:" + err);
+      }
+    }
   );
 }
 

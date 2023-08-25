@@ -3,9 +3,12 @@ import fs from "fs";
 
 const storagePath = path.join(__dirname, "../storage");
 
-const getTableTime = async (isDate, ID_SENDER = "") => {
+const getTableTime = async (isDate, ID_SENDER) => {
   try {
     const jsonData = await getDataRaw(ID_SENDER);
+    if (!jsonData) {
+      return false;
+    }
     let response = jsonData
       .map((subject) => {
         let daysBetween = subject.daysBetween
@@ -37,7 +40,7 @@ const getTableTime = async (isDate, ID_SENDER = "") => {
   }
 };
 
-async function getDataRaw(ID_SENDER = "") {
+async function getDataRaw(ID_SENDER) {
   try {
     const data = fs.readFileSync(
       storagePath + `/${ID_SENDER}dataFormmat.json`,
@@ -45,7 +48,7 @@ async function getDataRaw(ID_SENDER = "") {
     );
     return JSON.parse(data);
   } catch (err) {
-    console.error("Lỗi khi đọc hoặc phân tích JSON:", err);
+    console.error("Lỗi khi đọc hoặc phân tích JSON:");
     return false;
   }
 }

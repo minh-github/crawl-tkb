@@ -7,7 +7,7 @@ import userController from "../controllers/userController";
 import User from "../models/user";
 import moment from "moment";
 
-const bacJob = schedule.scheduleJob("0 0 6 * * *", async function () {
+const testJob = schedule.scheduleJob("0 22 * * *", async function () {
   const today = moment();
   const tomorrow = today.clone().add(1, "days");
 
@@ -16,12 +16,13 @@ const bacJob = schedule.scheduleJob("0 0 6 * * *", async function () {
 
   const users = await User.find({ sender_id: { $ne: MY_ID } }).exec();
   for (const user of users) {
-    let pronouns;
-    let pronounsUppercase;
     let dataResponse = await tableTimeController.getTableTime(
-      formattedDate,
+      formattedTomorrow,
       user.sender_id
     );
+
+    let pronouns;
+    let pronounsUppercase;
 
     if (!user.hasOwnProperty("gender")) {
       let fbInfo = await userController.getUserFbInfo(user.sender_id);
@@ -43,11 +44,13 @@ const bacJob = schedule.scheduleJob("0 0 6 * * *", async function () {
         text: `Em chưa lấy được thời khóa biểu của ${pronouns} 🐶`,
       };
       await chatBoxController.callSendAPI(user.sender_id, response);
+
       continue;
     }
 
     let response;
-    if (dataResponse && dataResponse.length > 0) {
+
+    if (dataResponse.length > 0 && dataResponse) {
       for (const message of dataResponse) {
         let tableTime = "";
         for (const lesson of message.tableTime[0].days) {
@@ -65,18 +68,29 @@ const bacJob = schedule.scheduleJob("0 0 6 * * *", async function () {
       }
       setTimeout(() => {
         response = {
-          text: `Em gửi ${pronouns} lịch hôm nay ạ 🩷`,
+          text: `Em gửi ${pronouns} lịch ngày mai ạ`,
         };
         chatBoxController.callSendAPI(user.sender_id, response);
-      }, 3000);
+      }, 2500);
+      setTimeout(() => {
+        response = {
+          text: `Chúc ${pronouns} ngủ ngon 🩷`,
+        };
+        chatBoxController.callSendAPI(user.sender_id, response);
+      }, 4500);
     } else {
       response = {
-        text: `Hôm nay ${pronouns} không có lịch học`,
+        text: "Ngày mai anh không có lịch học",
       };
       await chatBoxController.callSendAPI(user.sender_id, response);
+      setTimeout(() => {
+        response = {
+          text: `Chúc ${pronouns} ngủ ngon 🩷`,
+        };
+        chatBoxController.callSendAPI(user.sender_id, response);
+      }, 2500);
     }
   }
-  return 1;
 });
 
-export default bacJob;
+export default testJob;

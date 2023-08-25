@@ -2,3 +2,4 @@
 .env
 /bac-tool.pem
 /package-lock.json
+/src/storage

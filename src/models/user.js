@@ -7,12 +7,20 @@ const userSchema = new Schema({
   username: {
     type: String,
   },
+  confirm: {
+    type: Number,
+    default: 0,
+  },
   password: {
     type: String,
   },
   sender_id: {
     type: String,
     unique: true,
+  },
+  gender: {
+    type: String,
+    default: "male",
   },
 });
 

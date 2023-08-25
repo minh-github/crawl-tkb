@@ -3,7 +3,8 @@ import viewEngine from "./config/viewEngine";
 import initWebRoute from "./routes/web";
 import bodyParser from "body-parser";
 import connect from "./database/connect";
-// import bacJob from "./job/job";
+import bacJob from "./job/job";
+import testJob from "./job/testJob";
 require("dotenv").config();
 
 connect();
